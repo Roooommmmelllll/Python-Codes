@@ -1,0 +1,42 @@
+def getPic():
+  myFile = pickAFile()
+  myPic = makePicture(myFile)
+  return myPic
+
+def negative(pic):
+  for px in getPixels(pic):
+    redVal = getRed(px)
+    greenVal = getGreen(px)
+    blueVal = getBlue(px)
+    negColor = makeColor(255-redVal,255-greenVal,255-blueVal)
+    setColor(px, negColor)
+  
+def greyscale2(pic):
+  for px in getPixels(pic):
+    newRed = getRed(px)*0.299
+    newGreen = getGreen(px)*0.587
+    newBlue = getBlue(px)*0.114
+    luminance = newRed+newGreen+newBlue
+    setColor(px, makeColor(luminance,luminance,luminance))
+
+def mirrorVerticalLeft(pic):
+  width = getWidth(pic)
+  height = getHeight(pic)
+  middle = width/2
+  for y in range(height):
+    for x in range(middle):
+      leftPx = getPixel(pic, x, y)
+      leftColor = getColor(leftPx)
+      rightPx = getPixel(pic, width-x-1, y)
+      rightColor = getColor(rightPx)
+      setColor(leftPx,rightColor)
+      setColor(rightPx,leftColor)
+
+def main():
+  pic = getPic()
+  #negative(pic)
+  #greyscale2(pic)
+  mirrorVerticalLeft(pic)
+  show(pic)
+  
+main()
