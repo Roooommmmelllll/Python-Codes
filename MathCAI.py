@@ -71,13 +71,15 @@ def extraHelp(operand):
       print("The first bag has 4 marbles in it now, and the second bag has only 1.")
       print("Then you can take the last marble out of the second bag.")
       print("The first bag now has 5 marbles in it, and the second bag is empty!")
-      print("This idea works for anything, and in normal math looks like 3 + 2 = ?\n\n")
+      print("This idea works for anything, and in normal math looks like 3 + 2 = ?")
+      print("Which is 5!\n\n")
    elif(operand == "-"):
       print("\n\nRemember that you can think of subtraction as taking marbles out of a bag.")
       print("If you have a bag of 3 marbles, and you wish to take 2 out.")
       print("You remove one marble, so the bag now has 2 marbles in it.")
       print("Then you remove another marble, so that the bag now has 1 marble in it.")
-      print("You can think of this problem in normal math as, 3 - 2 = ?\n\n")
+      print("You can think of this problem in normal math as, 3 - 2 = ?")
+      print("Which equals 1!\n\n")
    elif(operand == "*"):
       print("/n/n")
       colLine = ""+str("%5.0f"%())
@@ -94,8 +96,11 @@ def extraHelp(operand):
       print("/n/nDivision is hard, but you cank think of it like this:")
       print("10 / 2 = ?")
       print("You subtract 2 from 10, until it reaches 0.")
-      print("
-      print("/n/n")
+      print("Then you add up how many times you had to subtract.")
+      print("In this case, 10-2 = 8. 8-2 = 6. 6-2 = 4. 4-2 = 2. 2-2 = 0.")
+      print("So, I had to subtract the 2 a total of five ( 5 ) times.")
+      print("That means that 10 / 2 = 5!/n/n")
+      
 # Give the student 10 problems, using random numbers from 1 to 12.
 # Questions should be in format, "What is 6 x 5?" or "What is 2 + 12?"
 def mathAdd():
