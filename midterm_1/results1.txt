@@ -1,0 +1,7 @@
+Rommel Niduaza
+April 10, 2014
+joe	23.0
+bill	20.0
+sue	16.166666666666668
+grace	23.666666666666668
+john	35.2
