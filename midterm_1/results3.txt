@@ -1,0 +1,14 @@
+Rommel Niduaza
+April 10, 2014
+
+Number of words longer than 8 letters: 10
+
+Number of words starting with the letter 'Z': 3
+
+List of words that are palindromes:
+dad
+racecar
+zzzzz
+zzz
+zz
+555555
